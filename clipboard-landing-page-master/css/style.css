@@ -1,0 +1,442 @@
+:root {
+
+    --Strong-Cyan: #26baa4;
+    --Light-Blue: #6173ff;
+    --Dark-Grayish-Blue: #4c545d;
+    --Grayish-Blue: #9fabb2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 4,6 */
+    font-family: 'Bai Jamjuree', sans-serif;
+    transition-duration: .5s;
+}
+
+.parent {
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 30px;
+    padding-right : 30px;
+}
+
+.parent .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.parent .container h1 {
+    color: var(--Strong-Cyan);
+    font-size: 80px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.parent .container .f-h2 {
+    /* color: var(--Grayish-Blue) */
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.parent .container p {
+    color: var(--Grayish-Blue);
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+.parent .container .buttons .in-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.parent .container .buttons .butt {
+    border: none;
+    width: 160px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 30px;
+}
+.parent .container .buttons .butt:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.parent .container .butt-1 {
+    background-color: var(--Strong-Cyan);
+    box-shadow: var(--Strong-Cyan) 0 1px 5px 0;
+}
+
+.parent .container .butt-2 {
+    background-color: var(--Light-Blue);
+    box-shadow: var(--Light-Blue) 0 1px 5px 0;
+
+}
+
+@media (max-width:767px) {
+    .parent .container .buttons .in-button {
+        flex-direction: column;
+    }
+    .parent .container p {
+        width: 100%;
+    }
+    .parent .container .buttons .butt {
+        width: 220px;
+    }
+}
+
+
+/* start under-con */
+.under-con {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+}
+/* start header */
+.under-con header {
+    text-align: center;
+}
+
+.under-con header .s-p {
+    font-size: 13px;
+    margin-top: 15px;
+    color: var(--Grayish-Blue);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:767px) {
+    .under-con header .s-p {
+        width: 80%;
+    }
+}
+
+/* start section in header */
+
+section {
+    margin-top: 50px;
+   
+}
+
+section .in-section {
+    display: flex;
+    justify-content: space-between;
+}
+section .in-section .image {
+    width: 50%;
+}
+
+section .in-section .image img {
+    width: 100%;
+    position: relative;
+    left: -50px;
+}
+
+section .in-section .text-side {
+    width: 50%;
+}
+
+section .in-section .text-side .first-a,
+section .in-section .text-side .second-b,
+section .in-section .text-side .third-c {
+    margin-top: 30px;
+}
+
+section .in-section .text-side .first-a p,
+section .in-section .text-side .second-b p,
+section .in-section .text-side .third-c p {
+    margin-top: 10px;
+    color: var(--Grayish-Blue);
+    width: 50%;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+@media (max-width:767px) {
+    section .in-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    section .in-section .image {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    section .in-section .image img {
+        width: 100%;
+        left: 0;
+    }
+    section .in-section .text-side {
+        width: 100%;
+        text-align: center;
+    }
+    section .in-section .text-side p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    section .in-section .text-side .first-a p,
+    section .in-section .text-side .second-b p,
+    section .in-section .text-side .third-c p {
+        width: 60%;
+    }
+}
+
+/* start un-sec */
+.un-sec {
+        margin-top: 100px;
+        text-align: center;
+}
+
+.un-sec h2 {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 25px;
+}
+
+.un-sec p {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    width: 65%;
+    margin: 20px auto 0;
+}
+
+.un-sec .image {
+   width: 70%;
+   margin: 60px auto 0;
+}
+
+.un-sec .image img {
+    width: 100%;
+}
+
+/* start grid-fase */
+
+.grid-fase {
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.grid-fase h2 {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.grid-fase p {
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.grid-fase .three-col {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid-fase .three-col .f-col img,
+.grid-fase .three-col .s-col img,
+.grid-fase .three-col .t-col img  {
+    height: 25px;
+}
+
+.grid-fase .three-col .f-col h4,
+.grid-fase .three-col .s-col h4,
+.grid-fase .three-col .t-col h4  {
+    margin-top: 25px;
+}
+
+.grid-fase .three-col .f-col p,
+.grid-fase .three-col .s-col p,
+.grid-fase .three-col .t-col p  {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:767px) {
+
+    .grid-fase .three-col {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+}
+
+/* start comps */
+.comps {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    /* width: 80%; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comps img {
+    width: 100px;
+}
+
+@media (max-width:767px) {
+    .comps {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/* b-footer */
+.b-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.b-footer h2 {
+    font-size: 22px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.b-footer p {
+    color: var(--Grayish-Blue);
+    width: 60%;
+    font-size: 14px;
+    margin:15px auto 0;
+}
+
+.b-footer .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.b-footer .buttons .button {
+    border: none;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+}
+.b-footer .buttons .button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.b-footer .buttons .butt-0 {
+    background-color: var(--Strong-Cyan);
+    box-shadow: var(--Strong-Cyan) 0 1px 5px 0;
+}
+
+.b-footer .buttons .butt-1 {
+    background: var(--Light-Blue);
+    box-shadow: var(--Light-Blue) 0 1px 5px 0;
+}
+
+/* footer */
+
+footer {
+    margin-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #9fabb21f;
+}
+
+footer .in-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .in-footer .left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+footer .in-footer .left-side h2 {
+    color: var(--Strong-Cyan);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+footer .in-footer .left-side .credits {
+    display: flex;
+    gap: 60px;
+}
+
+footer .in-footer .left-side .credits div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .in-footer .left-side .credits div a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 14px;
+}
+footer .in-footer .left-side .credits div a:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+footer .in-footer .right-side .socials i {
+    margin-left: 10px;
+    font-size: 16px;
+} 
+footer .in-footer .right-side .socials i:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+
+    footer .in-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .in-footer .left-side {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .in-footer .left-side .credits {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .in-footer .right-side .socials {
+        margin-top: 20px;
+    }
+
+    
+}
+
+
+
